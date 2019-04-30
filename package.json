@@ -1,0 +1,23 @@
+{
+  "name": "twitchchat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "twitchChat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesDolphin/twitchChat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesDolphin/twitchChat/issues"
+  },
+  "homepage": "https://github.com/JamesDolphin/twitchChat#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "javelin": "^0.4.2"
+  }
+}
