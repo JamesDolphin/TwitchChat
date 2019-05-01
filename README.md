@@ -1,7 +1,7 @@
 
 twitchChat is a Discord bot written in Node.js to monitor the chat section of selected twitch.tv channels and post it into configured Discord channels for the purpose of overlaying said Discord channel in game.
 
-Step 1: Clone this repository onto your server and in the root directory of the repository install the required library's with `npm i --save` 
+Step 1: Clone this repository onto your server and in the root directory of the repository install the required library's with `npm i` 
 
 Step 2: Create a file named ".env" in the root directory of the repository. This file will be used to store your discord bot tokens and twitch bot accounts. 
 
@@ -17,7 +17,7 @@ Step 4: Using PM2 below, navigate to the root directory of your repository and r
 I recommend using PM2 which is a Node.js process manager that can restart your program should it go down for any reason.
 PM2: [http://pm2.keymetrics.io/](http://pm2.keymetrics.io/)
 
-**Bot commands** 
+**Bot commands**  
 *!help*
 
     Lists all commands and how to use them
