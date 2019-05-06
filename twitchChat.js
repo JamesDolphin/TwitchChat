@@ -9,7 +9,7 @@ const discordCharLimit = Number(1999); // maximum size for a discord message
 
 client.login(process.env.DCTOKEN); // Login with preset discord token in the .env file
 
-client.on('error', () => {
+client.on('error', (error) => {
   console.log(error)
 })
 
