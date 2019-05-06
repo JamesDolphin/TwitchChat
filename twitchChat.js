@@ -9,6 +9,10 @@ const discordCharLimit = Number(1999); // maximum size for a discord message
 
 client.login(process.env.DCTOKEN); // Login with preset discord token in the .env file
 
+client.on('error', () => {
+  console.log(error)
+})
+
 // when discord has successfully connected (this section can be used to PM all users an update message)
 client.once('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -214,8 +218,11 @@ setInterval(() => {
 // updating the bot status
 const botStatusInt = 60 * 1000; 
 setInterval(() => {
-  client.user.setActivity(`Chatting in ${client.guilds.size} servers.`);
 
+  if(client.guilds.size){
+    client.user.setActivity(`Chatting in ${client.guilds.size} servers.`);
+  }
+  
   const channelArray = [];
   const inUseArray = [];
 
